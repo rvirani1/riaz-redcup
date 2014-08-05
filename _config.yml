@@ -1,8 +1,7 @@
-title: RedCup
-description: "Redcup: An awesome Theme for Jekyll"
+title: "Riaz.Codes Blog"
+description: "Riaz.Codes Blog"
 
-url: http://riaz.codes
-port: 3000
+baseurl: http://riaz.codes/
 highlighter: pygments
 
 permalink: /:year/:month/:day/:title.html
@@ -11,6 +10,6 @@ markdown: redcarpet
 google_analytics: #
 
 owner:
-  name: Nii Adjetey Sowah
-  disqus_shortname: nadjetey
+  name: "Riaz Virani"
+  disqus_shortname: riazvirani
   twitter: _nadjetey
