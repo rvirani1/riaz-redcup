@@ -1,5 +1,6 @@
 title: "Riaz.Codes Blog"
 description: "Riaz.Codes Blog"
+tagline: 'Riaz.thoughts.each { |thought| write }'
 
 baseurl: http://riaz.codes/
 highlighter: pygments
@@ -7,9 +8,9 @@ highlighter: pygments
 permalink: /:year/:month/:day/:title.html
 markdown: redcarpet
 
-google_analytics: #
+google_analytics: UA-53554002-1
 
 owner:
   name: "Riaz Virani"
-  disqus_shortname: riazvirani
-  twitter: _nadjetey
+  disqus_shortname: riazcodes
+  twoople: riaz

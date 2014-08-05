@@ -3,18 +3,20 @@
 }
 
 @font-face {
-    font-family: 'handwritting';
+    font-family: 'Permanent Marker', cursive;
     font-style: normal;
-    font-weight: 500;
+    /*font-weight: 500;*/
     src: url("../res/tallpaul.ttf")
         format('truetype');
 }
 
 #blog-title {
-    font-family: 'handwritting';  
-    font-size: 40px;
-    font-style: italic;
-    text-transform: uppercase;
+    /*font-family: 'Francois One', sans-serif;*/
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    opacity: 0.8;
+    /*font-style: italic;*/
+    /*text-transform: uppercase;*/
 }
 #blog-title a{    
     text-decoration: none;
@@ -74,7 +76,7 @@ h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hover {
 header {
     display: block;
     height: 100px;
-    margin:0 60px 0 50px;
+    margin:0 60px 0 40px;
     color: #ccc;
 }
 header h1 {
@@ -82,9 +84,10 @@ header h1 {
     height: 50px;
     margin:30px 0 0 0;
     float: left;
+    clear: both;
 }
 header h1 a {
-    display:inline-block;
+    /*display:inline-block;*/
     -webkit-transform: translate3d(0,0,0);
     -webkit-transition: 160ms -webkit-transform ease-out;
 }
@@ -115,6 +118,17 @@ header ul.navigation li a {
 }
 header ul.navigation li a:hover { color: black; text-decoration: none; }
 header ul.navigation li a.active { font-weight:bold; color:black; }
+
+#tagline {
+    display: block;
+    margin:0 0 0 0;
+    padding: 0 0 0 30px;
+    float: left;
+    clear: both;
+    height: 15px;
+    line-height: 1;
+    font-size: 10px;
+}
 
 /* main */
 #main { margin-bottom: 3em; }
@@ -177,6 +191,10 @@ div.content.intro {
 
 /* --------------------------------------------------------------------------------------------- */
 /* posts */
+
+.posts {
+    margin-top: 5px;
+}
 
 div.posts div.end {
     padding:40px;

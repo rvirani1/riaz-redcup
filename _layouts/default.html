@@ -12,14 +12,16 @@
             </div><!-- /.search-form -->
         </div><!-- ./search-wrapper -->
 
-        <iframe id="sidebar"></iframe>
+        <!--<iframe id="sidebar"></iframe>-->
         <header>
-            <h1 class="logo" id="blog-title"><a href="{{site.baseurl}}">{{ site.title }}</a></h1>
+            <h1 class="logo" id="blog-title"><a href="{{site.baseurl}}/">{{ site.title }}</a></h1>
             <ul class="navigation">        
                 <li><a href="{{site.baseurl}}/archive/"{% if page.url contains "/archive/" %}class="active"{% endif %} title="Archived articles">Archive</a></li>
-                <li><a href="{{site.baseurl}}/about/"{% if page.url contains "/about/" %}class="active"{% endif %}>About me</a></li>
+                <li><a target="_blank" href="http://www.twoople.com/riaz"{% if page.url contains "/about/" %}class="active"{% endif %}>Find Me</a></li>
             </ul>
-        </header>                 
+            <p id="tagline">{{site.tagline}}</p>
+        </header>
+
 
         {{ content }}
 
@@ -35,14 +37,7 @@
         {% endif %}
 
         {% unless page.no_footer %}
-        <footer>
-            <p>Powered by Jekyll - <a href="http://github.com/nadjetey/redcup">Redcup</a> Theme</p>
-            <p>
-                <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc"><img src="{{site.baseurl}}/res/cc-cc.png" class="cc">
-                    <img src="{{site.baseurl}}/res/cc-by.png" class="cc"></a>
-                This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons License</a>
-            </p>
-        </footer>
+        {% include footer.html %}
         {% endunless %}
 
         {% include disqus.html %}
