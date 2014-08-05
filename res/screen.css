@@ -122,7 +122,7 @@ header ul.navigation li a.active { font-weight:bold; color:black; }
 #tagline {
     display: block;
     margin:0 0 0 0;
-    padding: 0 0 0 30px;
+    padding: 0 0 0 0;
     float: left;
     clear: both;
     height: 15px;
